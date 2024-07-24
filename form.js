@@ -28,13 +28,15 @@ formEl.addEventListener('submit', (event) => {
     localStorage.setItem('blog', JSON.stringify(blogInfo));
 
     //make sure text in the all the spots are required
-    if (usernameEl == '' || titleEl == '' || contentEl == '') {
+    if (usernameEl === '' || titleEl === '' || contentEl === '') {
         window.alert('Error please enter the all text boxes');
         return;
         
     }
-    alert('Error please enter the all text boxes');
     
+
+    const blogPage = "./assets/blog.html";
+    window.location = blogPage; 
 });
 
 
