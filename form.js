@@ -25,7 +25,7 @@ formEl.addEventListener('submit', (event) => {
     // localStorage.setItem('content', contentValue);
     // console.log('test');
     // only need one local storage now
-    localStorage.setItem('blog', JSON.stringify(blogInfo));
+    localStorage.setItem('blogInfo', JSON.stringify(blogInfo));
 
     //make sure text in the all the spots are required
     if (usernameEl === '' || titleEl === '' || contentEl === '') {
@@ -38,5 +38,6 @@ formEl.addEventListener('submit', (event) => {
     const blogPage = "./assets/blog.html";
     window.location = blogPage; 
 });
+
 
 
