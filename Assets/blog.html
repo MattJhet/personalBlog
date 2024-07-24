@@ -7,9 +7,28 @@
 </head>
 <body>
     <header>
-        <button id="back"><a href="../index.html">back to home page</a></button>
-        <button id="light mode" style="color: rgb(113, 173, 241);" value="light">&#9728</button>
-        <button id="dark mode" value='dark'>&#127761</button>
+        button onclick="myFunc()" id="light mode" style="color:rgb(165, 173, 165);">
+        light mode
+    </button>
+    <button onclick="my2Func()" id="dark mode" style="color:rgb(57, 58, 57);">
+        dark mode
+    </button>
+ 
+    <script>
+        let result = document.getElementById("mode");
+ 
+        function changeColor(color) {
+            document.body.style.background = color;
+        }
+        function myFunc() {
+            changeColor('AliceBlue');
+            result.innerHTML = "Background Color changed";
+        }       
+        function my2Func() {
+            changeColor('DarkSlateGray');
+            result.innerHTML = "Background Color changed";
+        }        
+    </script>
 
     </header>
     <section>       
